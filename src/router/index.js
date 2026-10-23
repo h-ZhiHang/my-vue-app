@@ -1,9 +1,9 @@
 import { createRouter } from 'vue-router'
 //引入路由器模式
-import { createWebHistory } from 'vue-router'
+import { createWebHashHistory } from 'vue-router'
 import home from '@/components/TheWelcome.vue'
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
