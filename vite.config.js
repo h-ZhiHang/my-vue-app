@@ -15,6 +15,10 @@ export default defineConfig({
       authtoken: '2y21wzppRIiT4pkUXnjJ2vm9vQL_44sbEhLxXjZHJNR2mtZCi', // 可选，注册ngrok官网获取免费token
     }),
   ],
+  base: '/my-vue-app/',
+  build: {
+    target: 'esnext',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
